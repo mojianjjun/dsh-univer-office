@@ -251,3 +251,6 @@ Install only `dsh-univer-office`. The following similar names are deprecated npm
 ## License
 
 [Apache-2.0](LICENSE)
+
+> **gateway.cjs 说明**：本仓库以 gzip 形式分发（8.4MB，原 51MB），lib/index.js 首次启动时解压到系统临时目录（文件名含版本号，升级自动刷新）后 spawn，进程语义与官方完全一致。
+
