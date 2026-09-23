@@ -1,0 +1,1 @@
+function e(e){return typeof e==`object`&&!!e&&!Array.isArray(e)}function t(n,r){let i=n;for(let[n,a]of Object.entries(r))if(e(a)){let r=i[n];i[n]=t(e(r)?r:{},a)}else i[n]=a;return i}function n(e){return e.reduce((e,n)=>t(e,n),{})}export{n as t};
